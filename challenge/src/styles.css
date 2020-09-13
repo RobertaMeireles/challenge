@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.home .title{
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.home .subtitle{
+    font-size: 1.1rem;
+}
+
+.position{
+    padding-top: 4rem;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+table {
+    width: 100%;
+}
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  td , th{
+    padding: 5px;
+    text-align: center;    
+  }
+
+
+.msg-error{
+    position: relative;
+    top:5rem;
+    margin-top:5rem;
+    background-color: #e35e6b;
+    color: #fff;
+}
+
+.msg-success{
+    position: relative;
+    top:10rem;
+    background-color: #28a745;
+    color: #fff;
+}
+
+@media (max-width: 576px) { 
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

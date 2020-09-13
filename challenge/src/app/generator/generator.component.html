@@ -1,0 +1,31 @@
+<div class="position">
+    <mat-card class="home mat-elevation-z3">
+        <div class="info"> 
+            <mat-form-field>
+                <input matInput placeholder="Character" [(ngModel)]="character" name="character">
+            </mat-form-field>
+            <button mat-raised-button color="primary" disabled={{generatorButtonClicked}} (click)="set()">GENERATE 2D GRID</button>
+        </div>
+
+        <table>
+            <tr *ngFor="let line of arrayLetters">
+              <td>{{line[0]}}</td>
+              <td>{{line[1]}}</td>
+              <td>{{line[2]}}</td>
+              <td>{{line[3]}}</td>
+              <td>{{line[4]}}</td>
+              <td>{{line[5]}}</td>
+              <td>{{line[6]}}</td>
+              <td>{{line[7]}}</td>
+              <td>{{line[8]}}</td>
+              <td>{{line[9]}}</td>
+            </tr>
+        </table>
+        <div class="code">
+            <mat-form-field>
+                <input matInput placeholder="Your Code" value="{{valueShow}}" name="code">
+            </mat-form-field>
+        </div>
+    </mat-card>
+</div>
+    

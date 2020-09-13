@@ -1,0 +1,16 @@
+  .code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .mat-form-field {
+    text-align: center;
+  }
+
+.mat-raised-button{
+    line-height: 18px;
+    height: 3rem;
+    width: auto;
+}
